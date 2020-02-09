@@ -1,0 +1,6 @@
+name: Service demo Overrride
+type: module
+description: 'Service demo example module to override'
+core: '8.x'
+dependencies:
+- servicedemo

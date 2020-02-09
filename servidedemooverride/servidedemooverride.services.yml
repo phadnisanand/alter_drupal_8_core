@@ -1,0 +1,7 @@
+services:
+  servidedemooverride.api_demo:
+    class: Drupal\servidedemooverride\ApiDemoOverride
+    decorates: servicedemo.api_demo
+    decoration_priority: 1
+    public: false
+    arguments: ['@entity_type.manager', '@database', '@language_manager','@current_user','@servidedemooverride.api_demo.inner']
